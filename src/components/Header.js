@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Header() {
     return (
         <header className="section">
@@ -7,7 +9,7 @@ function Header() {
                   <div className="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
                      <div className="full">
                         <div className="center-desk">
-                           <div className="logo"> <a href="index.html"><img src="images/logo.png" alt="#"/></a> </div>
+                           <div className="logo"> <Link to="/"><img src="images/logo.png" alt="#"/></Link> </div>
                         </div>
                      </div>
                   </div>
@@ -16,12 +18,12 @@ function Header() {
                         <div className="limit-box">
                            <nav className="main-menu">
                               <ul className="menu-area-main">
-                                 <li> <a href="index.html">Home</a> </li>
-                                 <li> <a href="about.html">Gallery</a> </li>
-                                 <li><a href="testmonial.html">Testmonial</a></li>
-                                 <li><a href="clients.html">Shop</a></li>
-                                 <li><a href="contact.html">Contact Us</a></li>
-                                 <li className="last"><a href="#"><img src="images/search_icon.png" alt="icon"/></a></li>
+                                 <li> <Link to="/">Home</Link> </li>
+                                 <li> <Link to="/gallery">Gallery</Link> </li>
+                                 <li><Link to="">Testmonial</Link></li>
+                                 <li><Link to="/login">Login</Link></li>
+                                 <li><Link to="/register">Register</Link></li>
+                                 <li className="last"><Link to="#"><img src="images/search_icon.png" alt="icon"/></Link></li>
                               </ul>
                            </nav>
                         </div>
