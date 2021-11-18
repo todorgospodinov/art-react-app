@@ -5,14 +5,14 @@ function Gallery() {
 
       <section>
 
-         <div class="clothes_main section ">
+         <div className="clothes_main section ">
 
-         <div id="plant" class="section  product">
-            <div class="container">
-               <div class="row">
-                  <div class="col-md-12 ">
-                     <div class="titlepage">
-                        <h2><strong class="black"> Our</strong>  Arts</h2>
+         <div id="plant" className="section  product">
+            <div className="container">
+               <div className="row">
+                  <div className="col-md-12 ">
+                     <div className="titlepage">
+                        <h2><strong className="black"> Our</strong>  Arts</h2>
                         {/* <span>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected randomised words which don't look even slightly believable</span> */}
                      </div>
                      <GalleryNavigation/>
@@ -24,50 +24,50 @@ function Gallery() {
          </div>
 
 
-            <div class="container">
-               <div class="row">
-                  <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-                     <div class="sport_product">
+            <div className="container">
+               <div className="row">
+                  <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                     <div className="sport_product">
                         <figure><img src="images/basketball.png" alt="img" /></figure>
-                        <h3> $<strong class="price_text">50</strong></h3>
+                        <h3> $<strong className="price_text">50</strong></h3>
                         <h4>basket ball</h4>
                      </div>
                   </div>
-                  <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 ">
-                     <div class="sport_product">
+                  <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 ">
+                     <div className="sport_product">
                         <figure><img src="images/t-shirt.png" alt="img" /></figure>
-                        <h3> $<strong class="price_text">50</strong></h3>
+                        <h3> $<strong className="price_text">50</strong></h3>
                         <h4> T-Shirt</h4>
                      </div>
                   </div>
-                  <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 ">
-                     <div class="sport_product">
+                  <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 ">
+                     <div className="sport_product">
                         <figure><img src="images/game.png" alt="img" /></figure>
-                        <h3> $<strong class="price_text">50</strong></h3>
+                        <h3> $<strong className="price_text">50</strong></h3>
                         <h4>Game</h4>
                      </div>
                   </div>
 
 
 
-                  <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-                     <div class="sport_product">
+                  <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                     <div className="sport_product">
                         <figure><img src="images/basketball.png" alt="img" /></figure>
-                        <h3> $<strong class="price_text">50</strong></h3>
+                        <h3> $<strong className="price_text">50</strong></h3>
                         <h4>basket ball</h4>
                      </div>
                   </div>
-                  <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 ">
-                     <div class="sport_product">
+                  <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 ">
+                     <div className="sport_product">
                         <figure><img src="images/t-shirt.png" alt="img" /></figure>
-                        <h3> $<strong class="price_text">50</strong></h3>
+                        <h3> $<strong className="price_text">50</strong></h3>
                         <h4>T-Shirt</h4>
                      </div>
                   </div>
-                  <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 ">
-                     <div class="sport_product">
+                  <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 ">
+                     <div className="sport_product">
                         <figure><img src="images/game.png" alt="img" /></figure>
-                        <h3> $<strong class="price_text">50</strong></h3>
+                        <h3> $<strong className="price_text">50</strong></h3>
                         <h4>Game</h4>
                      </div>
                   </div>
