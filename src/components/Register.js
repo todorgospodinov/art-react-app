@@ -1,43 +1,31 @@
-import { auth } from '../../utils/firebase';
 
-const Register = ({
-    history
-}) => {
-    const onRegisterSubmitHandler = (e) => {
-        e.preventDefault();
-
-        const username = e.target.username.value;
-        const password = e.target.password.value;
-
-        auth.createUserWithEmailAndPassword(username, password)
-            .then(userCredential => {
-                console.log('Register');
-                history.push('/');
-            });
-    }
+const Register = ()=>{
+    
     
     return (
-        <section className="register">
-            <form onSubmit={onRegisterSubmitHandler}>
+        <section id="register-page" className="register">
+            <form id="register-form" action="" method="">
                 <fieldset>
-                    <legend>Register</legend>
+                    <legend>Register Form</legend>
                     <p className="field">
-                        <label htmlFor="username">Username</label>
+                        <label htmlFor="email">Email</label>
                         <span className="input">
-                            <input type="text" name="username" id="username" placeholder="Username" />
-                            <span className="actions"></span>
-                            <i className="fas fa-user"></i>
+                            <input type="text" name="email" id="email" placeholder="Email" />
                         </span>
                     </p>
                     <p className="field">
                         <label htmlFor="password">Password</label>
                         <span className="input">
                             <input type="password" name="password" id="password" placeholder="Password" />
-                            <span className="actions"></span>
-                            <i className="fas fa-key"></i>
                         </span>
                     </p>
-                    <input className="button" type="submit" className="submit" value="Register" />
+                    <p className="field">
+                        <label htmlFor="repeat-pass">Repeat Password</label>
+                        <span className="input">
+                            <input type="password" name="confirm-pass" id="repeat-pass" placeholder="Repeat Password" />
+                        </span>
+                    </p>
+                    <input className="button submit" type="submit" value="Register" />
                 </fieldset>
             </form>
         </section>
