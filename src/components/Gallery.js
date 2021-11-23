@@ -1,4 +1,5 @@
 import GalleryNavigation from "./GalleryNavigation";
+import ArtCard from "./ArtCard";
 
 function Gallery() {
    return (
