@@ -25,7 +25,7 @@ const Login = ({
 
     return (
         
-<section id="login-page" className="login">
+<section id="login-page" className={styles.login}>
             <form className={styles.loginForm} onSubmit={onLoginHandler} method="POST">
                 <fieldset>
                     <legend>Login</legend>

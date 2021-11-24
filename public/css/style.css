@@ -238,7 +238,8 @@ button {
 
 /**-- heading section --**/
 
-.main_heading {
+
+/* .main_heading {
     text-align: center;
     display: flex;
     justify-content: center;
@@ -322,6 +323,8 @@ a.readmore_bt {
 
 /**-- list icon --**/
 
+
+/* 
 .ul_list_info_icon ul {
     list-style: none;
 }
@@ -334,12 +337,13 @@ a.readmore_bt {
 
 .ul_list_info_icon ul li img {
     width: 75px;
-}
+} */
 
-
+*/
 /*---------------------------- preloader area ----------------------------*/
 
-.loader_bg {
+
+/* .loader_bg {
     position: fixed;
     z-index: 9999999;
     background: #fff;
@@ -361,10 +365,13 @@ a.readmore_bt {
 .loader img {
     width: 280px;
 }
+ */
 
 
 /*---------------------------- scroll to top area ----------------------------*/
 
+
+/* 
 .scrollup {
     float: right;
     position: absolute;
@@ -435,6 +442,7 @@ a.readmore_bt {
 .text_align_center {
     text-align: center;
 }
+ */
 
 
 /*--------------------------------------------------------------------- header area ---------------------------------------------------------------------*/
@@ -1870,9 +1878,10 @@ input[type="radio"] .styled:checked+label::after {
 }
 
 
-/** gallery section css **/
+/** =====================================gallery section css========================================== **/
 
-#demo {
+
+/* #demo {
     height: 100%;
     position: relative;
     overflow: hidden;
@@ -1912,12 +1921,13 @@ img.zoom {
 
 .modal-footer {
     display: none;
-}
+} */
 
 
-/** end section **/
+/** ============================================end section========================================= **/
 
-.margin-r-l {
+
+/* .margin-r-l {
     padding-right: 40px;
     padding-left: 40px;
 }
@@ -2074,9 +2084,10 @@ textarea {
     margin-bottom: 30px;
     padding: 12px 4px 11px 11px;
     width: 100%;
-}
+} */
 
-.footer {
+
+/* .footer {
     background-color: #212120;
     text-align: center;
 }
@@ -2178,6 +2189,7 @@ ul.location_icon span {
 .btn-primary:focus {
     box-shadow: inherit;
 }
+ */
 
 
 /*--------------------------------------------------------------------- inner_page css ---------------------------------------------------------------------*/
@@ -2218,9 +2230,10 @@ ul.location_icon span {
 }
 
 
-/** slider arrow **/
+/** ============================slider arrow========================================= **/
 
-.carousel-control-prev {
+
+/* .carousel-control-prev {
     left: inherit;
 }
 
@@ -2233,7 +2246,10 @@ ul.location_icon span {
     font-size: 30px;
     color: #000;
     border-radius: 30px;
-}
+} */
+
+
+/** ============================ gallery========================================= **/
 
 .new-text {
     position: absolute;
@@ -2458,6 +2474,9 @@ ul.location_icon span {
     padding-bottom: 30px;
     padding-top: 30px;
 }
+
+
+/** ============================ footer ========================================= **/
 
 .contact_us {
     width: 100%;

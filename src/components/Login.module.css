@@ -45,6 +45,10 @@ form label {
     font-weight: bold;
 }
 
+.login {
+    padding-top: 100px;
+}
+
 .field .input {
     display: flex;
     position: relative;

@@ -16,7 +16,7 @@ const Create =()=>{
                     </p>
                     <p className="field">
                         <label htmlFor="description">Description</label>
-                        <span className="input">
+                        <span className={styles.input}>
                             <textarea name="description" id="description" placeholder="Description"></textarea>
                         </span>
                     </p>
@@ -26,14 +26,14 @@ const Create =()=>{
                             <input type="text" name="imageUrl" id="image" placeholder="Image" />
                         </span>
                     </p>
-                    <p className="field">
+                    <p className={styles.field}>
                         <label htmlFor="type">Type</label>
-                        <span className="input">
+                        <span className={styles.input}>
                             <select id="type" name="type">
-                                <option value="paint">Paint</option>
-                                <option value="sculpture">Sclupture</option>
-                                <option value="poster">Poster</option>
-                                <option value="other">Other</option>
+                            <option >Paint</option>
+                                <option >Sclupture</option>
+                                <option >Poster</option>
+                                <option >Other</option>
                             </select>
                         </span>
                     </p>

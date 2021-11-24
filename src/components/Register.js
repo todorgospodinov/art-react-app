@@ -3,7 +3,7 @@ const Register = ()=>{
     
     
     return (
-        <section id="register-page" className="register">
+        <section id="register-page" className={styles.register}>
             <form className={styles.registerForm} action="" method="">
                 <fieldset>
                     <legend>Register</legend>

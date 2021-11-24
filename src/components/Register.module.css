@@ -88,6 +88,10 @@ form label {
     z-index: 1;
 }
 
+.register {
+    padding-top: 100px;
+}
+
 .field .input input:focus {
     border-color: #090;
 }
