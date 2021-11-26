@@ -1,0 +1,106 @@
+.detailsOtherPet,
+.detailsMyPet,
+.deletePet,
+.otherPet,
+.myPet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.detailsMyPet>p:nth-child(2),
+.deletePet>p:nth-child(2),
+.otherPet>p:nth-child(2),
+.myPet>p:nth-child(2) {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+textarea#description {
+    height: 100px;
+    resize: none;
+}
+
+.otherPet {
+    align-items: inherit;
+    width: 24%;
+    margin-bottom: 15px;
+    padding: 10px;
+    box-shadow: -8px -2px 28px -8px #000000;
+}
+
+.detailsMyPet textarea,
+.my-pets textarea {
+    margin-bottom: 2rem;
+}
+
+.description {
+    width: 17rem;
+    height: 10vh;
+    padding: 2rem;
+    overflow: auto;
+}
+
+.petDescription {
+    width: 30rem;
+    padding: 2rem;
+    overflow: auto;
+    text-align: justify;
+}
+
+.details {
+    padding-top: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.details .type {
+    margin: 5px;
+    font-size: 20px;
+}
+
+.details span.likes {
+    display: flex;
+    flex-direction: column;
+}
+
+.img {
+    width: 15rem;
+    position: relative;
+    overflow: hidden;
+    padding: 0rem;
+}
+
+img {
+    display: block;
+    /* position: absolute; */
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.img::after {
+    display: block;
+    content: "";
+    padding-top: 100%;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.6rem 1rem;
+    border-radius: 0.4rem;
+    text-decoration: none;
+    font-weight: bold;
+    background: cadetblue;
+    color: rgb(255, 255, 255);
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+.fa-heart {
+    color: red;
+}

@@ -9,19 +9,19 @@ const Register = ()=>{
                     <legend>Register</legend>
                     <p className={styles.field}>
                         <label htmlFor="email">Email</label>
-                        <span className="input">
+                        <span className={styles.input}>
                             <input type="text" name="email" id="email" placeholder="Email" />
                         </span>
                     </p>
                     <p className={styles.field}>
                         <label htmlFor="password">Password</label>
-                        <span className="input">
+                        <span className={styles.input}>
                             <input type="password" name="password" id="password" placeholder="Password" />
                         </span>
                     </p>
                     <p className={styles.field}>
                         <label htmlFor="repeat-pass">Repeat Password</label>
-                        <span className="input">
+                        <span className={styles.input}>
                             <input type="password" name="confirm-pass" id="repeat-pass" placeholder="Repeat Password" />
                         </span>
                     </p>

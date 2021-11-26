@@ -1,77 +1,47 @@
-import GalleryNavigation from "./GalleryNavigation";
+import { useEffect, useState } from "react";
 import ArtCard from "./ArtCard";
+import * as artService from '../services/artService';
 
 function Gallery() {
+
+   const [arts, setArts] = useState([]);
+
+   useEffect(() => {
+      artService.getAll().then(result => {
+         setArts(result);
+      })
+
+   });
+
    return (
-
       <section>
-
          <div className="clothes_main section ">
 
-         <div id="plant" className="section  product">
-            <div className="container">
-               <div className="row">
-                  <div className="col-md-12 ">
-                     <div className="titlepage">
-                        <h2><strong className="black"> Our</strong>  Arts</h2>
-                        {/* <span>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected randomised words which don't look even slightly believable</span> */}
+            <div id="plant" className="section  product">
+               <div className="container">
+                  <div className="row">
+                     <div className="col-md-12">
+                        <div className="titlepage">
+                           <h2><strong className="black"> Our</strong>  Arts</h2>
+                           <span>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected randomised words which don't look even slightly believable</span>
+                        </div>
+
+
+
                      </div>
-                     <GalleryNavigation/>
-
-
                   </div>
                </div>
             </div>
-         </div>
 
 
             <div className="container">
                <div className="row">
-                  <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-                     <div className="sport_product">
-                        <figure><img src="images/basketball.png" alt="img" /></figure>
-                        <h3> $<strong className="price_text">50</strong></h3>
-                        <h4>basket ball</h4>
-                     </div>
-                  </div>
-                  <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 ">
-                     <div className="sport_product">
-                        <figure><img src="images/t-shirt.png" alt="img" /></figure>
-                        <h3> $<strong className="price_text">50</strong></h3>
-                        <h4> T-Shirt</h4>
-                     </div>
-                  </div>
-                  <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 ">
-                     <div className="sport_product">
-                        <figure><img src="images/game.png" alt="img" /></figure>
-                        <h3> $<strong className="price_text">50</strong></h3>
-                        <h4>Game</h4>
-                     </div>
-                  </div>
-
-
-
-                  <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-                     <div className="sport_product">
-                        <figure><img src="images/basketball.png" alt="img" /></figure>
-                        <h3> $<strong className="price_text">50</strong></h3>
-                        <h4>basket ball</h4>
-                     </div>
-                  </div>
-                  <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 ">
-                     <div className="sport_product">
-                        <figure><img src="images/t-shirt.png" alt="img" /></figure>
-                        <h3> $<strong className="price_text">50</strong></h3>
-                        <h4>T-Shirt</h4>
-                     </div>
-                  </div>
-                  <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 ">
-                     <div className="sport_product">
-                        <figure><img src="images/game.png" alt="img" /></figure>
-                        <h3> $<strong className="price_text">50</strong></h3>
-                        <h4>Game</h4>
-                     </div>
-                  </div>
+                  
+                     {arts.map(a => <ArtCard key={a._id
+                     
+                     
+                     }  art={a} />)}
+                  
                </div>
             </div>
          </div>

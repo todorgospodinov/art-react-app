@@ -8,6 +8,7 @@ import Gallery from './components/Gallery';
 import Login from './components/Login';
 import Register from './components/Register'
 import Create from './components/Create';
+import Details from './components/Details';
 
 
 
@@ -49,6 +50,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/create" element={<Create />} />
+          <Route path="/details/:artId" element={<Details />} />
         </Routes>
       </main>
       <Footer />

@@ -636,7 +636,7 @@ ul.top_icon li a {
     font-size: 16px;
     display: block;
     font-weight: 500;
-    color: #ffffff;
+    color: #ccc;
     padding: 22px 20px;
     text-transform: uppercase;
 }
@@ -730,7 +730,7 @@ ul.top_icon li a {
 }
 
 .mainMenu ul>li a:hover {
-    color: #fff;
+    color: #cff;
 }
 
 .mainMenu ul>li:nth-child(6) {

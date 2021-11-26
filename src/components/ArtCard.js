@@ -1,24 +1,20 @@
 import { Link } from 'react-router-dom';
+import styles from './ArtCard.module.css';
 
-function ArtCard() {
+
+const ArtCard =({
+art
+})=> {
 
     return (<section>
 
-        <div className="container">
-            <div className="row">
-                <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-                    <div className="sport_product">
-                        <figure><img src="images/basketball.png" alt="img" /></figure>
-                        <h3> $<strong className="price_text">50</strong></h3>
-                        <h4>basket ball</h4>
-                    </div>
-                </div>
+        <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+            <div className={styles.sportProduct}>
+                <figure><img src={art.imageUrl} alt="img" /></figure>
+                <h3> <strong className={styles.priceText}>{art.type}</strong></h3>
+                <h4>{art.name}</h4>
+                <Link className={styles.button} to={`/details/art._id`}>Details</Link>
             </div>
-
-
-
-
-
         </div>
 
     </section>

@@ -1,28 +1,48 @@
+import { useNavigate } from 'react-router-dom';
+
+import * as artService from '../services/artService';
 import styles from './Create.module.css';
 
-const Create =()=>{
+const Create = () => {
+    const navigate = useNavigate();
+    
+    const onArtCreate = (e) => {
+        e.preventDefault();
+        let formData = new FormData(e.currentTarget);
+        let name = formData.get('name');
+        let description = formData.get('description');
+        let imageUrl = formData.get('imageUrl');
+        let type = formData.get('type');
+
+        artService.create({
+            name, description, imageUrl, type
+        }).then(result => {
+            navigate('/gallery')
+        })
+
+    }
 
     return (
-        
+
         <section id="create-page" className={styles.create}>
-            <form id="create-form"  method="POST">
+            <form id="create-form" onSubmit={onArtCreate} method="POST">
                 <fieldset>
                     <legend>Add Art</legend>
                     <p className={styles.field}>
                         <label htmlFor="name">Name</label>
-                        <span className="input">
+                        <span className={styles.input}>
                             <input type="text" name="name" id="name" placeholder="Name" />
                         </span>
                     </p>
-                    <p className="field">
+                    <p className={styles.field}>
                         <label htmlFor="description">Description</label>
                         <span className={styles.input}>
                             <textarea name="description" id="description" placeholder="Description"></textarea>
                         </span>
                     </p>
-                    <p className="field">
+                    <p className={styles.field}>
                         <label htmlFor="image">Image</label>
-                        <span className="input">
+                        <span className={styles.input}>
                             <input type="text" name="imageUrl" id="image" placeholder="Image" />
                         </span>
                     </p>
@@ -30,18 +50,18 @@ const Create =()=>{
                         <label htmlFor="type">Type</label>
                         <span className={styles.input}>
                             <select id="type" name="type">
-                            <option >Paint</option>
+                                <option >Paint</option>
                                 <option >Sclupture</option>
                                 <option >Poster</option>
                                 <option >Other</option>
                             </select>
                         </span>
                     </p>
-                    <input className="button submit" type="submit" value="Add Art" />
+                    <input className={styles.button} type="submit" value="Add Art" />
                 </fieldset>
             </form>
-        </section>    
-       
+        </section>
+
     );
 
 }

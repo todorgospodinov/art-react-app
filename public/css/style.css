@@ -1698,9 +1698,10 @@ input[type="radio"] .styled:checked+label::after {
     box-shadow: #081b30 0px 0px 0px 0px;
 }
 
-.layout_padding {
+
+/* .layout_padding {
     padding-top: 90px 0px;
-}
+} */
 
 .titlepage {
     padding-bottom: 50px;
@@ -2251,7 +2252,8 @@ ul.location_icon span {
 
 /** ============================ gallery========================================= **/
 
-.new-text {
+
+/* .new-text {
     position: absolute;
     float: right;
     text-align: right;
@@ -2409,7 +2411,10 @@ ul.location_icon span {
     width: 100%;
     float: left;
     margin-top: 58px;
-}
+} */
+
+
+/**==========================================artcard=========================================**/
 
 .Clients {
     width: 100%;

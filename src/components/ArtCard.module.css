@@ -1,0 +1,159 @@
+.new-text {
+    position: absolute;
+    float: right;
+    text-align: right;
+    width: 17%;
+    background-color: blue;
+    border-radius: 104px;
+    text-align: center;
+    padding: 17px 0px;
+}
+
+.sportProduct {
+    padding: 40px 20px;
+    background: #fff;
+    text-align: center;
+}
+
+.priceText {
+    font-size: 20px;
+    color: #1369f5;
+}
+
+.sportProduct figure {
+    margin: 0;
+}
+
+.sportProduct figure img {
+    height: 300px;
+}
+
+.new-text {
+    position: absolute;
+    float: right;
+    width: 92px;
+    background-color: blue;
+    border-radius: 104px;
+    text-align: center;
+    padding: 0;
+    right: -46px;
+    height: 92px;
+    line-height: 92px;
+    top: 30px;
+    color: #fff;
+}
+
+.new-text-1 {
+    position: absolute;
+    float: right;
+    width: 92px;
+    background-color: #081b30;
+    border-radius: 104px;
+    text-align: center;
+    padding: 0;
+    right: -46px;
+    height: 92px;
+    line-height: 92px;
+    top: 30px;
+    color: #fff;
+    box-shadow: 0px 0px 3px 0px;
+}
+
+.margin-top_130 {
+    margin-top: 130px !important;
+}
+
+.sportProduct .images-main {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    padding: 40px 0px 20px 0px;
+    min-height: 450px;
+}
+
+.sportProduct h3 {
+    font-size: 29px;
+    line-height: 25px;
+    padding-top: 25px;
+}
+
+.sportProduct h4 {
+    color: #000;
+    font-size: 24px;
+    line-height: 24px;
+    padding: 10px 0px 0px 0px;
+}
+
+.priceText {
+    text-align: center;
+    font-size: 29px;
+    color: #136af8;
+    padding-top: 25px;
+    line-height: 25px;
+    font-weight: normal;
+}
+
+.price {
+    text-align: center;
+    font-size: 29px;
+    color: #081b30;
+}
+
+.basket_text {
+    text-align: center;
+    font-size: 20px;
+    color: #000;
+    padding: 0;
+    line-height: 18px;
+}
+
+.sportProduct_main {
+    min-height: 590px;
+    background: #136af8;
+    position: relative;
+}
+
+.read-more {
+    background-color: #136af8;
+    width: 50%;
+    text-align: center;
+    border-radius: 25px;
+    color: #fff;
+    margin-top: 68px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 18px;
+}
+
+.blue_bg {
+    background-color: #136af8;
+}
+
+.section {
+    float: left;
+    width: 100%;
+}
+
+.sporrt_text {
+    width: 100%;
+    float: left;
+    color: #fffcf4;
+    margin-top: 80px;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.lorem_text {
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    color: #fffcf4;
+    margin: 0px;
+}
+
+.btn_main {
+    width: 100%;
+    float: left;
+    margin-top: 58px;
+}
