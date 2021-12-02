@@ -4,9 +4,8 @@ import * as authService from '../services/authService';
 
 import styles from './Login.module.css';
 
-const Login = ({
-    onLogin
-}) => {
+const Login = ({onLogin}) => {
+    // const { login } = useContext(AuthContext);
     const navigate = useNavigate();
 
     const onLoginHandler = (e) => {
@@ -15,20 +14,23 @@ const Login = ({
         let formData = new FormData(e.currentTarget);
 
         let email = formData.get('email');
+        let password = formData.get('password');
 
-        authService.login(email);
-        
-        onLogin(email);
-
-        navigate('/');
+        authService.login(email, password)
+            .then((authData) => {
+                onLogin(authData);
+                navigate('/');
+            })
+            .catch(err => {
+                console.log(err)
+            });
     }
 
     return (
-        
-<section id="login-page" className={styles.login}>
+        <section id="login-page" className={styles.login}>
             <form className={styles.loginForm} onSubmit={onLoginHandler} method="POST">
                 <fieldset>
-                    <legend>Login</legend>
+                    <legend className={styles.formName} >Login</legend>
                     <p className={styles.field}>
                         <label htmlFor="email">Email</label>
                         <span className={styles.input}>
@@ -45,9 +47,9 @@ const Login = ({
                 </fieldset>
             </form>
         </section>
-    
-        
-        
+
+
+
     );
 }
 

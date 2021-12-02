@@ -1,3 +1,5 @@
+import styles from './Main.module.css'
+
 function Main() {
     return (
 <section >
@@ -21,7 +23,7 @@ function Main() {
                         </div>
                         <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                            <div className="img-box">
-                              <figure><img src="images/boksing-gloves.png" alt="img"/></figure>
+                              <figure><img src="images/gallery3.png" alt="img"/></figure>
                            </div>
                         </div>
                      </div>
@@ -32,7 +34,7 @@ function Main() {
                      <div className="row marginii">
                         <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                            <div className="carousel-caption ">
-                              <h1>Welcome to <strong className="color">Our Shop</strong></h1>
+                              <h1>Welcome to <strong className="color">Our Gallery</strong></h1>
                               <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</p>
                               <a className="btn btn-lg btn-primary" href="#" role="button">Buy Now</a>
                               <a className="btn btn-lg btn-primary" href="about.html" role="button">About</a>
@@ -40,7 +42,7 @@ function Main() {
                         </div>
                         <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                            <div className="img-box ">
-                              <figure><img src="images/boksing-gloves.png" alt="img"/></figure>
+                              <figure><img src="images/gallery1.png" alt="img"/></figure>
                            </div>
                         </div>
                      </div>
@@ -51,7 +53,7 @@ function Main() {
                      <div className="row marginii">
                         <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                            <div className="carousel-caption ">
-                              <h1>Welcome to <strong className="color">Our Shop</strong></h1>
+                              <h1>Welcome to <strong className="color">Our Gallery</strong></h1>
                               <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</p>
                               <a className="btn btn-lg btn-primary" href="#" role="button">Buy Now</a>
                               <a className="btn btn-lg btn-primary" href="about.html" role="button">About</a>
@@ -59,7 +61,7 @@ function Main() {
                         </div>
                         <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                            <div className="img-box">
-                              <figure><img src="images/boksing-gloves.png" alt="img"/></figure>
+                              <figure><img src="images/gallery2.png" alt="img"/></figure>
                            </div>
                         </div>
                      </div>

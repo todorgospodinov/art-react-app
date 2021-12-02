@@ -134,6 +134,15 @@
     width: 100%;
 }
 
+.artCard {
+    padding-right: 50px;
+}
+
+.artCard .sportProduct {
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
 .sporrt_text {
     width: 100%;
     float: left;

@@ -11,7 +11,7 @@ function Gallery() {
          setArts(result);
       })
 
-   });
+   }, []);
 
    return (
       <section>

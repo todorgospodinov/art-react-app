@@ -1,13 +1,15 @@
+import styles from './Footer.module.css'
+
 function Footer() {
     return (
         <div>
-<div id="footer" className="Address layout_padding">
+<div id="footer" className={styles.Address} >
        <div className="container">
           <div className="row">
              <div className="col-sm-12">
                <div className="titlepage">
-                  <div className="main">
-                     <h1 className="address_text">Address</h1>
+                  <div className={styles.main}>
+                     <h1 className={styles.address_text}>Address</h1>
                   </div>
                </div>
              </div>
@@ -32,8 +34,8 @@ function Footer() {
                      </div> 
                   </div>
                </div>
-                  <div className="menu_main">
-                     <div className="menu_text">
+                  <div className={styles.menu_main}>
+                     <div className={styles.menu_text}>
                         <ul>
                            <li className="active"><a href="#">Home</a></li>                         
                            <li><a href="about.html">About</a></li>

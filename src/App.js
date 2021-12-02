@@ -47,7 +47,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/gallery" element={<Gallery />} />
-          <Route path="/login" element={<Login />} />
+          <Route path="/login" element={<Login  onLogin={onLogin} />} />
           <Route path="/register" element={<Register />} />
           <Route path="/create" element={<Create />} />
           <Route path="/details/:artId" element={<Details />} />
