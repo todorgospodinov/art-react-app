@@ -1,10 +1,34 @@
 import styles from './Register.module.css';
-const Register = ()=>{
-    
-    
+import { useContext } from 'react';
+import { useNavigate } from 'react-router';
+
+import * as authService from '../services/authService';
+import { AuthContext } from '../contexts/AuthContext';
+
+
+
+const Register = () => {
+
+    const navigate = useNavigate();
+    const { login } = useContext(AuthContext);
+
+    const registerSubmitHandler = (e) => {
+        e.preventDefault();
+
+        let { email, password } = Object.fromEntries(new FormData(e.currentTarget));
+
+        authService.register(email, password)
+            .then(authData => {
+                login(authData);
+
+                navigate('/');
+            });
+
+    }
+
     return (
         <section id="register-page" className={styles.register}>
-            <form className={styles.registerForm} action="" method="">
+            <form className={styles.registerForm} action="" method="POST" onSubmit={registerSubmitHandler}>
                 <fieldset>
                     <legend>Register</legend>
                     <p className={styles.field}>

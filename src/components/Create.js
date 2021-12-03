@@ -1,11 +1,13 @@
 import { useNavigate } from 'react-router-dom';
-
+import { useContext } from 'react';
+import { AuthContext } from '../contexts/AuthContext';
 import * as artService from '../services/artService';
 import styles from './Create.module.css';
 
 const Create = () => {
+    const { user } = useContext(AuthContext);
     const navigate = useNavigate();
-    
+
     const onArtCreate = (e) => {
         e.preventDefault();
         let formData = new FormData(e.currentTarget);
@@ -16,9 +18,10 @@ const Create = () => {
 
         artService.create({
             name, description, imageUrl, type
-        }).then(result => {
-            navigate('/gallery')
-        })
+        }, user.accessToken)
+            .then(result => {
+                navigate('/gallery')
+            })
 
     }
 

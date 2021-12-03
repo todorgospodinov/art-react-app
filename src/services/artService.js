@@ -1,5 +1,5 @@
-const baseUrl = 'http://softuni-server.herokuapp.com/jsonstore';
-
+// const baseUrl = 'http://softuni-server.herokuapp.com/jsonstore';
+const baseUrl = 'http://localhost:3030/data';
 export const getAll = async () => {
 
     let response = await fetch(`${baseUrl}/gallery`);
@@ -12,13 +12,14 @@ export const getAll = async () => {
 
 };
 
-export const create = async (artData) => {
+export const create = async (artData,token) => {
     let response = await fetch(`${baseUrl}/gallery`, {
         method: 'POST',
         headers: {
             'content-type': 'application/json',
+            'X-Authorization':token,
         },
-        body: JSON.stringify(artData)
+        body: JSON.stringify({...artData, likes:0})
 
     });
     let result = await response.json();

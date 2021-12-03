@@ -15,7 +15,7 @@ function Main() {
                      <div className="row marginii">
                         <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                            <div className="carousel-caption ">
-                              <h1>Welcome to <strong className="color">Our Gallery</strong></h1>
+                              <h1>Welcome to <strong className="color">Tod's Place</strong></h1>
                               <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</p>
                               <a className="btn btn-lg btn-primary" href="#" role="button">See Now</a>
                               <a className="btn btn-lg btn-primary" href="about.html" role="button">About us</a>
@@ -34,7 +34,7 @@ function Main() {
                      <div className="row marginii">
                         <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                            <div className="carousel-caption ">
-                              <h1>Welcome to <strong className="color">Our Gallery</strong></h1>
+                              <h1>Welcome to <strong className="color">Tod's Place</strong></h1>
                               <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</p>
                               <a className="btn btn-lg btn-primary" href="#" role="button">Buy Now</a>
                               <a className="btn btn-lg btn-primary" href="about.html" role="button">About</a>
@@ -53,7 +53,7 @@ function Main() {
                      <div className="row marginii">
                         <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                            <div className="carousel-caption ">
-                              <h1>Welcome to <strong className="color">Our Gallery</strong></h1>
+                              <h1>Welcome to <strong className="color">Tod's Place</strong></h1>
                               <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</p>
                               <a className="btn btn-lg btn-primary" href="#" role="button">Buy Now</a>
                               <a className="btn btn-lg btn-primary" href="about.html" role="button">About</a>
