@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react';
 import { Routes, Route } from "react-router-dom";
 import { AuthContext } from './contexts/AuthContext';
+import useLocalStorage from './hooks/useLocalStorage';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Main from './components/Main';
+import Slider from './components/Slider/Slider';
 import Gallery from './components/Gallery';
 import Login from './components/Login';
 import Logout from './components/Logout';
@@ -12,35 +13,37 @@ import Create from './components/Create';
 import Details from './components/Details';
 
 
+const initialAuthState = {
+  _id: '',
+  email: '',
+  accessToken: '',
+
+};
 
 
 function App() {
 
-  const [user,setUser] = useState({
-    accessToken: '',
-    email: '',
-    _id: ''
-  });
+  const [user, setUser] = useLocalStorage('user', initialAuthState);
 
   const login = (authData) => {
     setUser(authData);
   }
 
-  const onLogout = () => {
-
+  const logout = () => {
+    setUser(initialAuthState);
   };
 
   return (
 
-    <AuthContext.Provider value={{user,login}}>
+    <AuthContext.Provider value={{ user, login, logout }}>
       <div className="App" >
         <Header />
         <main id="site-content">
           <Routes>
-            <Route path="/" element={<Main />} />
+            <Route path="/" element={<Slider />} />
             <Route path="/gallery" element={<Gallery />} />
-            <Route path="/login" element={<Login  />} />
-            <Route path="/logout" element={<Logout  />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/logout" element={<Logout />} />
             <Route path="/register" element={<Register />} />
             <Route path="/create" element={<Create />} />
             <Route path="/details/:artId" element={<Details />} />

@@ -41,6 +41,10 @@ textarea#description {
     overflow: auto;
 }
 
+.details .petInformation {
+    height: 10%;
+}
+
 .petDescription {
     width: 30rem;
     padding: 2rem;
@@ -103,4 +107,17 @@ img {
 
 .fa-heart {
     color: red;
+}
+
+.deletePet>form,
+.detailsMyPet>form {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+}
+
+.actions {
+    display: flex;
+    position: absolute;
+    bottom: 150px;
 }

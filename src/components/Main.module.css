@@ -1,3 +1,385 @@
  li {
      line-height: 10px;
  }
+ 
+ .marginii {
+     margin: 154px 0px 100px 0px;
+ }
+ 
+ .carouselIndicators li {
+     display: none;
+ }
+ 
+ .bannerMain {
+     position: relative;
+     background-color: #136af8;
+     background-size: 100% 100%;
+ }
+ 
+ .bannerMain .carouselCaption {
+     text-align: left;
+     left: 0;
+     top: 16%;
+     position: relative;
+ }
+ 
+ .bannerMain .carouselCaption h1 {
+     font-size: 65px;
+     line-height: 74px;
+     font-weight: bold;
+     color: #081b30;
+ }
+ 
+ .bannerMain .carouselCaption p {
+     color: #ffffff;
+     padding: 9px 0px;
+     margin-bottom: 50px;
+ }
+ 
+ .color {
+     color: #fff;
+ }
+ 
+ .btnPrimary {
+     background: #081b30;
+     border: indianred;
+     max-width: 170px;
+     width: 100%;
+     margin-right: 10px;
+     border-radius: 25px;
+ }
+ 
+ .btnPrimary:hover {
+     background: #ffffff;
+     color: #000;
+ }
+ 
+ .imgBox figure {
+     margin: 0;
+ }
+ 
+ .imgBox figure img {
+     box-shadow: #081b30 0px 0px 0px 0px;
+ }
+ 
+ .layout_padding {
+     padding-top: 90px 0px;
+ }
+ 
+ .titlepage {
+     padding-bottom: 50px;
+ }
+ 
+ .titlepage h2 {
+     padding: 0px 0px 0px 0px;
+     font-size: 50px;
+     font-weight: bold;
+     color: #136af8;
+     line-height: 50px;
+     position: relative;
+     margin-bottom: 20px;
+ }
+ 
+ .titlepage span {
+     color: #141012;
+     font-size: 17px;
+     line-height: 31px;
+     display: block;
+     font-weight: normal;
+ }
+ 
+ .clothes_main {
+     width: 100%;
+     float: left;
+     background-color: #081b30;
+     height: auto;
+     padding: 60px 0px;
+ }
+ 
+ .plants .plants-box {
+     background-color: #fff;
+     box-shadow: #dcd8d8 0px 1px 3px 0px;
+     margin-bottom: 30px;
+ }
+ 
+ .plants .plants-box figure {
+     margin: 0px;
+ }
+ 
+ .plants .plants-box figure img {
+     width: 100%;
+ }
+ 
+ .plants .plants-box h3 {
+     font-size: 30px;
+     line-height: 36px;
+     font-weight: 600;
+     padding: 16px 20px 6px 20px;
+     color: #0d0e0a;
+ }
+ 
+ .plants .plants-box p {
+     font-size: 17px;
+     line-height: 30px;
+     padding: 0px 20px 14px 20px;
+     color: #0d0e0a;
+ }
+ 
+ .about {
+     background: #ffff;
+     padding-top: 90px;
+ }
+ 
+ .about_text {
+     width: 100%;
+     float: left;
+ }
+ 
+ .about-banner {
+     background-size: 100% 100%;
+     background-repeat: no-repeat;
+     padding: 70px 0px 10px 0px;
+     background-color: #136af8;
+ }
+ 
+ .about .about-box {
+     text-align: center;
+ }
+ 
+ .carousel {
+     position: relative
+ }
+ 
+ .carouselInner {
+     position: relative;
+     width: 100%;
+     overflow: hidden
+ }
+ 
+ .carouselItem {
+     position: relative;
+     display: none;
+     -ms-flex-align: center;
+     align-items: center;
+     width: 100%;
+     transition: -webkit-transform .6s ease;
+     transition: transform .6s ease;
+     transition: transform .6s ease, -webkit-transform .6s ease;
+     -webkit-backface-visibility: hidden;
+     backface-visibility: hidden;
+     -webkit-perspective: 1000px;
+     perspective: 1000px
+ }
+ 
+ @media screen and (prefers-reduced-motion:reduce) {
+     .carouselItem {
+         transition: none
+     }
+ }
+ 
+ .carouselItem-next,
+ .carouselItem-prev,
+ .carouselItem.active {
+     display: block
+ }
+ 
+ .carouselItem-next,
+ .carouselItem-prev {
+     position: absolute;
+     top: 0
+ }
+ 
+ .carousel-item-next.carousel-item-left,
+ .carousel-item-prev.carousel-item-right {
+     -webkit-transform: translateX(0);
+     transform: translateX(0)
+ }
+ 
+ @supports ((-webkit-transform-style:preserve-3d) or (transform-style:preserve-3d)) {
+     .carousel-item-next.carousel-item-left,
+     .carousel-item-prev.carousel-item-right {
+         -webkit-transform: translate3d(0, 0, 0);
+         transform: translate3d(0, 0, 0)
+     }
+ }
+ 
+ .active.carousel-item-right,
+ .carousel-item-next {
+     -webkit-transform: translateX(100%);
+     transform: translateX(100%)
+ }
+ 
+ @supports ((-webkit-transform-style:preserve-3d) or (transform-style:preserve-3d)) {
+     .active.carousel-item-right,
+     .carousel-item-next {
+         -webkit-transform: translate3d(100%, 0, 0);
+         transform: translate3d(100%, 0, 0)
+     }
+ }
+ 
+ .active.carousel-item-left,
+ .carousel-item-prev {
+     -webkit-transform: translateX(-100%);
+     transform: translateX(-100%)
+ }
+ 
+ @supports ((-webkit-transform-style:preserve-3d) or (transform-style:preserve-3d)) {
+     .active.carousel-item-left,
+     .carousel-item-prev {
+         -webkit-transform: translate3d(-100%, 0, 0);
+         transform: translate3d(-100%, 0, 0)
+     }
+ }
+ 
+ .carousel-fade .carousel-item {
+     opacity: 0;
+     transition-duration: .6s;
+     transition-property: opacity
+ }
+ 
+ .carousel-fade .carousel-item-next.carousel-item-left,
+ .carousel-fade .carousel-item-prev.carousel-item-right,
+ .carousel-fade .carousel-item.active {
+     opacity: 1
+ }
+ 
+ .carousel-fade .active.carousel-item-left,
+ .carousel-fade .active.carousel-item-right {
+     opacity: 0
+ }
+ 
+ .carousel-fade .active.carousel-item-left,
+ .carousel-fade .active.carousel-item-prev,
+ .carousel-fade .carousel-item-next,
+ .carousel-fade .carousel-item-prev,
+ .carousel-fade .carousel-item.active {
+     -webkit-transform: translateX(0);
+     transform: translateX(0)
+ }
+ 
+ @supports ((-webkit-transform-style:preserve-3d) or (transform-style:preserve-3d)) {
+     .carousel-fade .active.carousel-item-left,
+     .carousel-fade .active.carousel-item-prev,
+     .carousel-fade .carousel-item-next,
+     .carousel-fade .carousel-item-prev,
+     .carousel-fade .carousel-item.active {
+         -webkit-transform: translate3d(0, 0, 0);
+         transform: translate3d(0, 0, 0)
+     }
+ }
+ 
+ .carousel-control-next,
+ .carousel-control-prev {
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     display: -ms-flexbox;
+     display: flex;
+     -ms-flex-align: center;
+     align-items: center;
+     -ms-flex-pack: center;
+     justify-content: center;
+     width: 15%;
+     color: #fff;
+     text-align: center;
+     opacity: .5
+ }
+ 
+ .carousel-control-next:focus,
+ .carousel-control-next:hover,
+ .carousel-control-prev:focus,
+ .carousel-control-prev:hover {
+     color: #fff;
+     text-decoration: none;
+     outline: 0;
+     opacity: .9
+ }
+ 
+ .carousel-control-prev {
+     left: 0
+ }
+ 
+ .carousel-control-next {
+     right: 0
+ }
+ 
+ .carousel-control-next-icon,
+ .carousel-control-prev-icon {
+     display: inline-block;
+     width: 20px;
+     height: 20px;
+     background: transparent no-repeat center center;
+     background-size: 100% 100%
+ }
+ 
+ .carousel-control-prev-icon {
+     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E")
+ }
+ 
+ .carousel-control-next-icon {
+     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E")
+ }
+ 
+ .carouselIndicators {
+     position: absolute;
+     right: 0;
+     bottom: 10px;
+     left: 0;
+     z-index: 15;
+     display: -ms-flexbox;
+     display: flex;
+     -ms-flex-pack: center;
+     justify-content: center;
+     padding-left: 0;
+     margin-right: 15%;
+     margin-left: 15%;
+     list-style: none
+ }
+ 
+ .carouselIndicators li {
+     position: relative;
+     -ms-flex: 0 1 auto;
+     flex: 0 1 auto;
+     width: 30px;
+     height: 3px;
+     margin-right: 3px;
+     margin-left: 3px;
+     text-indent: -999px;
+     background-color: rgba(255, 255, 255, .5)
+ }
+ 
+ .carouselIndicators li::before {
+     position: absolute;
+     top: -10px;
+     left: 0;
+     display: inline-block;
+     width: 100%;
+     height: 10px;
+     content: ""
+ }
+ 
+ .carouselIndicators li::after {
+     position: absolute;
+     bottom: -10px;
+     left: 0;
+     display: inline-block;
+     width: 100%;
+     height: 10px;
+     content: ""
+ }
+ 
+ .carouselIndicators .active {
+     background-color: #fff
+ }
+ 
+ .carouselCaption {
+     position: absolute;
+     right: 15%;
+     bottom: 20px;
+     left: 15%;
+     z-index: 10;
+     padding-top: 20px;
+     padding-bottom: 20px;
+     color: #fff;
+     text-align: center
+ }

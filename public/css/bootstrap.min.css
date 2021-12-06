@@ -110,11 +110,12 @@ abbr[title] {
     border-bottom: 0
 }
 
-address {
+
+/* address {
     margin-bottom: 1rem;
     font-style: normal;
     line-height: inherit
-}
+} */
 
 dl,
 ol,

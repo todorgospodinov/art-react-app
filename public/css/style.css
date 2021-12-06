@@ -1724,7 +1724,8 @@ input[type="radio"] .styled:checked+label::after {
     color: #fff;
 }
 
-.btn-primary {
+
+/* .btn-primary {
     background: #081b30;
     border: indianred;
     max-width: 170px;
@@ -1736,7 +1737,7 @@ input[type="radio"] .styled:checked+label::after {
 .btn-primary:hover {
     background: #ffffff;
     color: #000;
-}
+} */
 
 .img-box figure {
     margin: 0;

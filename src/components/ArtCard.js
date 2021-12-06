@@ -14,6 +14,8 @@ art
                 <h3> <strong className={styles.priceText}>{art.type}</strong></h3>
                 <h4>{art.name}</h4>
                 <Link className={styles.button} to={`/details/${art._id}`}>Details</Link>
+                
+           
             </div>
         </div>
 
