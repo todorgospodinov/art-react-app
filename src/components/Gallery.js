@@ -23,7 +23,7 @@ function Gallery() {
                      <div className="col-md-12">
                         <div className="titlepage">
                            <h2><strong className="black"> Our</strong>  Arts</h2>
-                           <span>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected randomised words which don't look even slightly believable</span>
+                           {/* <span>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected randomised words which don't look even slightly believable</span> */}
                         </div>
 
 

@@ -13,17 +13,13 @@
         padding-top: 0px;
         background-size: 100% 100%;
         background-repeat: no-repeat;
-        min-height: 110px;
+        min-height: 80px;
     }
     
     .logo {
         float: left;
         position: relative;
         width: 40%;
-    }
-    
-    .logoSection {
-        padding: 0;
     }
     
     nav.mainMenu {
@@ -62,6 +58,10 @@
         color: #081b30;
     }
     
+    .mainMenu ul>li nth:child(5) a {
+        padding-right: 0px;
+    }
+    
     .right_cart_section {
         float: right;
         width: auto;
@@ -76,10 +76,6 @@
     
     .right_cart_section .cart_icons {
         padding: 18px 0 0;
-    }
-    
-    .mainMenu ul>li nth:child(5) a {
-        padding-right: 0px;
     }
     
     .right_cart_section ul li {
@@ -652,6 +648,11 @@
         display: flex;
     }
     
+    .userNavigation span {
+        padding-top: 21px;
+        color: #ccc;
+    }
+    
     .mainMenu ul>div li a {
         line-height: 20px;
         font-size: 16px;
@@ -663,7 +664,7 @@
     }
     
     .mainMenu ul li:last-child a {
-        padding-right: 0;
+        padding-right: 30px;
     }
     
     .sub-down li {

@@ -46,7 +46,7 @@ const Header = () => {
                                     ? userNavigation
                                     : guestNavigation
                                  }
-                                 <li className={styles.last}><Link to="#"><img src="images/search_icon.png" alt="icon" /></Link></li>
+                                 {/* <li className={styles.last}><Link to="#"><img src="images/search_icon.png" alt="icon" /></Link></li> */}
                               </ul>
                            </nav>
                         </div>
