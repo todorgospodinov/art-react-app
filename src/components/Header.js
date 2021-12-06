@@ -32,7 +32,7 @@ const Header = () => {
                   <div className={styles.logoSection}>
                    
                         <div className={styles.centerDesk}>
-                           <div className={styles.logo}> <Link to="/"><img src="images/logo.png" alt="#" /></Link> </div>
+                           <div className={styles.logo}> <Link to="/">Art Gallery Tod's Place</Link> </div>
                         
                      </div>
                   </div>

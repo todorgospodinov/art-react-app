@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Smooch&display=swap');
 form {
     max-width: 30rem;
 }
@@ -37,8 +38,9 @@ form legend {
     width: 30%;
     padding: 0.5rem 1rem;
     left: 155px;
-    top: -1.8rem;
+    top: -2.8rem;
     position: absolute;
+    text-align: center;
 }
 
 form label {
@@ -123,7 +125,7 @@ form textarea:focus {
     border-radius: 0.4rem;
     text-decoration: none;
     font-weight: bold;
-    background: cadetblue;
+    background: #136af8;
     color: rgb(255, 255, 255);
     border: none;
     font-size: 1rem;
