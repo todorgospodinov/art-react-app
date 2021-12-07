@@ -52,10 +52,10 @@ import { AuthContext } from '../contexts/AuthContext';
                 <p className={styles.img}><img src={art.imageUrl} /></p>
                 <div className={styles.actions}>
 
-                    {user._id && (user._id == art._ownerId
+                    {user._id && (user._id ==art._ownerId)
                         ? ownerButtons
                         : userButtons
-                    )}
+                    }
 
                     <div className={styles.likes}>
                         <img className={styles.hearts} src="/images/heart.png" />

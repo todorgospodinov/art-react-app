@@ -1367,6 +1367,9 @@
         },
         gallery: {
 
+        },
+        users: {
+
         }
     };
     var rules$1 = {

@@ -17,10 +17,13 @@ const Create = () => {
         let type = formData.get('type');
 
         artService.create({
-            name, description, imageUrl, type
+            name,
+            description,
+            imageUrl,
+            type,
         }, user.accessToken)
             .then(result => {
-                navigate('/gallery')
+                navigate('/');
             })
 
     }
@@ -53,7 +56,7 @@ const Create = () => {
                         <label htmlFor="type">Type</label>
                         <span className={styles.input}>
                             <select id="type" name="type">
-                                <option >Paint</option>
+                                <option >Painting</option>
                                 <option >Sclupture</option>
                                 <option >Poster</option>
                                 <option >Other</option>

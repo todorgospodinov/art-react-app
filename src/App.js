@@ -11,6 +11,7 @@ import Logout from './components/Logout';
 import Register from './components/Register'
 import Create from './components/Create';
 import Details from './components/Details';
+import CustomErrorBoundary from './components/CustomErrorBoundary';
 
 
 const initialAuthState = {
@@ -34,7 +35,7 @@ function App() {
   };
 
   return (
-
+<CustomErrorBoundary>
     <AuthContext.Provider value={{ user, login, logout }}>
       <div className="App" >
         <Header />
@@ -52,6 +53,7 @@ function App() {
         <Footer />
       </div>
     </AuthContext.Provider>
+    </CustomErrorBoundary>
   );
 }
 
