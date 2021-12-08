@@ -41,10 +41,15 @@ form legend {
     position: absolute;
     font-family: 'Smooch', cursive;
     text-align: center;
+    margin: 14px;
 }
 
 form label {
     font-weight: bold;
+}
+
+.errorColor {
+    color: red;
 }
 
 .field .input {

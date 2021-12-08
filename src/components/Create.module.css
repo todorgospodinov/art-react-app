@@ -41,6 +41,7 @@ form legend {
     position: absolute;
     font-family: 'Smooch', cursive;
     text-align: center;
+    margin: 14px;
 }
 
 form label {

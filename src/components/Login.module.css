@@ -41,6 +41,7 @@ form legend {
     top: -2.8rem;
     position: absolute;
     text-align: center;
+    margin: 14px;
 }
 
 form label {

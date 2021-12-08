@@ -21,7 +21,9 @@ class CustomErrorBoundary extends React.Component {
     
     render() {
         if (this.state.hasError) {
-            return <h1>Oops, something went wrong. Calm down. We will remove it!</h1>
+            return <h1>Oops, something went wrong. Calm down. We will remove it!
+            </h1>
+       
         }
 
         return this.props.children;

@@ -2,6 +2,8 @@ import { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { AuthContext } from '../contexts/AuthContext';
 import * as authService from '../services/authService';
+import { userSchema } from './Validations/UserValidation';
+import * as yup from 'yup';
 
 import styles from './Login.module.css';
 
@@ -30,7 +32,7 @@ const Login = () => {
     return (
         <section id="login-page" className={styles.login}>
             <form className={styles.loginForm} onSubmit={onLoginHandler} method="POST">
-            
+             
                 <fieldset>
                 <legend className={styles.formName} >Login</legend> 
                     <p className={styles.field}>

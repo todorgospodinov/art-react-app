@@ -20,7 +20,7 @@ art
         </div>
 
     </section>
-    )
+    );
 }
 
 export default ArtCard;
