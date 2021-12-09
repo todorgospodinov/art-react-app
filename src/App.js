@@ -12,6 +12,7 @@ import Register from './components/Register'
 import Create from './components/Create';
 import Details from './components/Details';
 import CustomErrorBoundary from './components/CustomErrorBoundary';
+import './App.css';
 
 
 const initialAuthState = {

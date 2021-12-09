@@ -1,7 +1,7 @@
 /* ! * Bootstrap v4.1.0 (https: //getbootstrap.com/)
 * Copyright 2011-2018 The Bootstrap Authors * Copyright 2011-2018 Twitter, Inc. * Licensed under MIT (https: //github.com/twbs/bootstrap/blob/master/LICENSE) */
 
- :root {
+:root {
     --blue: #007bff;
     --indigo: #6610f2;
     --purple: #6f42c1;
@@ -9247,3 +9247,306 @@ a.text-dark:hover {
 
 
 /*# sourceMappingURL=bootstrap.min.css.map */
+
+.marginii {
+    margin: 154px 0px 100px 0px;
+}
+
+.carousel-indicators li {
+    display: none;
+}
+
+.banner-main {
+    position: relative;
+    background-color: #136af8;
+    background-size: 100% 100%;
+}
+
+.banner-main .carousel-caption {
+    text-align: left;
+    left: 0;
+    top: 16%;
+    position: relative;
+}
+
+.banner-main .carousel-caption h1 {
+    font-size: 65px;
+    line-height: 74px;
+    font-weight: bold;
+    color: #081b30;
+}
+
+.banner-main .carousel-caption p {
+    color: #ffffff;
+    padding: 9px 0px;
+    margin-bottom: 50px;
+}
+
+.color {
+    color: #fff;
+}
+
+
+/*========================================================================*/
+
+.img-box figure {
+    margin: 0;
+}
+
+.img-box figure img {
+    box-shadow: #081b30 0px 0px 0px 0px;
+}
+
+.layout_padding {
+    padding-top: 90px 0px;
+}
+
+.titlepage {
+    padding-bottom: 50px;
+}
+
+.titlepage h2 {
+    padding: 0px 0px 0px 0px;
+    font-size: 50px;
+    font-weight: bold;
+    color: #136af8;
+    line-height: 50px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.titlepage span {
+    color: #141012;
+    font-size: 17px;
+    line-height: 31px;
+    display: block;
+    font-weight: normal;
+}
+
+.clothes_main {
+    width: 100%;
+    float: left;
+    background-color: #081b30;
+    height: auto;
+    padding: 60px 0px;
+}
+
+.plants .plants-box {
+    background-color: #fff;
+    box-shadow: #dcd8d8 0px 1px 3px 0px;
+    margin-bottom: 30px;
+}
+
+.plants .plants-box figure {
+    margin: 0px;
+}
+
+.plants .plants-box figure img {
+    width: 100%;
+}
+
+.plants .plants-box h3 {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 600;
+    padding: 16px 20px 6px 20px;
+    color: #0d0e0a;
+}
+
+.plants .plants-box p {
+    font-size: 17px;
+    line-height: 30px;
+    padding: 0px 20px 14px 20px;
+    color: #0d0e0a;
+}
+
+.about {
+    background: #ffff;
+    padding-top: 90px;
+}
+
+.about_text {
+    width: 100%;
+    float: left;
+}
+
+.about-banner {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 70px 0px 10px 0px;
+    background-color: #136af8;
+}
+
+.about .about-box {
+    text-align: center;
+}
+
+
+/*========================================================================*/
+
+.email_text {
+    width: 100%;
+    float: left;
+    margin-top: 30px;
+}
+
+.active {
+    color: #000;
+}
+
+.footer {
+    width: 100%;
+    float: left;
+    background-color: #136af8;
+    height: auto;
+    padding: 0px;
+}
+
+.main_btn {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact_us_3 {
+    margin-top: 90px;
+    margin-bottom: -105px;
+    box-shadow: 0px 0px 8px 0px;
+    color: #0a1422;
+}
+
+.site_info {
+    display: flex;
+    color: #fff;
+    padding-bottom: 10px;
+}
+
+.info_icon {
+    background-color: #fff;
+    padding: 20px;
+    margin-right: 30px;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+}
+
+.header_main {
+    width: 100%;
+    float: left;
+    background-color: #136af8;
+    padding-top: 20px;
+}
+
+.copyright_text {
+    width: 100%;
+    float: left;
+    margin-top: 20px;
+}
+
+button.btn.btn-primary,
+button.btn.btn-primary:hover,
+button.btn.btn-primary:focus {
+    background: #136af8;
+    padding: 10 40px;
+}
+
+.padding-top_0 {
+    padding-top: 0 !important;
+}
+
+.padding_bottom_0 {
+    padding-bottom: 0 !important;
+}
+
+#main_slider .carousel-control-prev,
+#main_slider .carousel-control-next {
+    width: 65px;
+    height: 65px;
+    background: #fff;
+    opacity: 1;
+    font-size: 30px;
+    color: #091e30;
+    border-radius: 100%;
+}
+
+#main_slider a.carousel-control-prev {
+    position: absolute;
+    left: 50px;
+    top: 40%;
+}
+
+#main_slider a.carousel-control-next {
+    position: absolute;
+    left: 50px;
+    top: 50%;
+}
+
+#main_slider .carousel-control-prev:hover,
+#main_slider .carousel-control-next:hover,
+#main_slider .carousel-control-prev:focus,
+#main_slider .carousel-control-next:focus {
+    background: #091e30;
+    color: #fff;
+}
+
+.plane_secsun_2 {
+    width: 100%;
+    float: left;
+    margin-top: 30px;
+}
+
+.product {
+    padding-top: 90px;
+}
+
+.product .titlepage h2 {
+    color: #136af8;
+}
+
+.black {}
+
+.section_Clients .titlepage h2 {
+    padding: 0px 0px 0px 0px;
+    font-size: 50px;
+    font-weight: bold;
+    color: #000;
+    line-height: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact_us .titlepage h2 {
+    text-align: center;
+}
+
+.form-control {
+    padding: 13px 16px;
+}
+
+.footer p {
+    color: #fff;
+}
+
+.footer p a {
+    color: #fff;
+}
+
+.footer p a:hover {
+    color: #fff;
+}
+
+.product_pagr .clothes_main {
+    margin-bottom: 90px;
+}
+
+.main-menu ul>li a {
+    padding-top: 5px;
+}
+
+.sport_product {
+    margin-bottom: 20px;
+}
+
+.about_pape .banner-main {
+    margin-bottom: 60px;
+}

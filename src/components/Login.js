@@ -61,7 +61,7 @@ const Login = () => {
                     <p className={styles.field}>
                         <label htmlFor="password">Password</label>
                         <span className={styles.input} style={{ borderColor: errors.password ? 'red' : 'inherit' }}>
-                            <input type="password" name="password" id="password" placeholder="password" defaultValue={art.password} onChange={handleChange} />
+                            <input type="password" name="password" id="password" placeholder="Pass1234" defaultValue={art.password} onChange={handleChange} />
                         </span>
                         <span className="errorColor" style={{ display: errors.password ? 'inline' : 'hidden' }}> {errors.password}</span>
                     </p>
