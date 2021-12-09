@@ -20,7 +20,7 @@ const Login = () => {
         console.log("Callback function when form is submitted!");
         console.log("Form Values ", values);
       }
-      const {handleChange, values,errors,handleSubmit} = useForm(formLogin);
+      const {handleChange, values,errors} = useForm(formLogin);
       
 
 
@@ -47,7 +47,7 @@ const Login = () => {
 
     return (
         <section id="login-page" className={styles.login}>
-            <form className={styles.loginForm} onSubmit={handleSubmit} method="POST">
+            <form className={styles.loginForm} onSubmit={onLoginHandler} method="POST">
              
                 <fieldset>
                 <legend className={styles.formName} >Login</legend> 
