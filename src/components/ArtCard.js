@@ -1,9 +1,10 @@
 import { Link } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 import styles from './ArtCard.module.css';
-
+//import { isAuth } from './hoc/isAuth';
 
 const ArtCard =({
-art
+art, user
 })=> {
 
     return (<section>

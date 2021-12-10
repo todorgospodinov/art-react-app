@@ -17,7 +17,7 @@ const Header = () => {
          <span> Welcome, {user.email} </span>
          <li> <Link to="/">Home</Link> </li>
          <li> <Link className={styles.button} to="/gallery">Gallery</Link> </li>
-         <li><Link className={styles.button} to="/my-art">My Art</Link></li>
+         <li><Link className={styles.button} to="/my-gallery">My Gallery</Link></li>
          <li><Link className={styles.button} to="/create">Add Art</Link></li>
          <li><Link className={styles.button} to="/logout">Logout</Link></li>
       </div>
@@ -32,7 +32,7 @@ const Header = () => {
                   <div className={styles.logoSection}>
                    
                         <div className={styles.centerDesk}>
-                           <div className={styles.logo}> <Link to="/">Art Gallery Tod's Place</Link> </div>
+                           <div className={styles.logo}> <Link to="/">Art Gallery <span>Tod's Place</span></Link> </div>
                         
                      </div>
                   </div>

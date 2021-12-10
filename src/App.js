@@ -6,6 +6,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Slider from './components/Slider/Slider';
 import Gallery from './components/Gallery';
+import MyGallery from './components/MyGallery';
 import Login from './components/Login';
 import Logout from './components/Logout';
 import Register from './components/Register'
@@ -44,6 +45,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Slider />} />
             <Route path="/gallery" element={<Gallery />} />
+            <Route path="/my-gallery" element={<MyGallery />} />
             <Route path="/login" element={<Login />} />
             <Route path="/logout" element={<Logout />} />
             <Route path="/register" element={<Register />} />

@@ -1365,7 +1365,8 @@
         comments: {
 
         },
-        gallery: {"7e9e51e0-5e8e-4055-ab51-216ac854da34": {
+        gallery: {
+            "7e9e51e0-5e8e-4055-ab51-216ac854da34": {
             "_ownerId": "76f08dcc-3715-49b4-a599-6412d31e2d15",
             "name": "Mikelandjelo",
             "description": "Despite holding a low opinion of painting, he also created two of the most influential frescoes in the history of Western art",

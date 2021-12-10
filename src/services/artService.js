@@ -1,3 +1,4 @@
+import * as request from './requester';
  //const baseUrl = 'http://softuni-server.herokuapp.com/jsonstore';
  const baseUrl = 'http://localhost:3030/data';
 
@@ -8,6 +9,14 @@ export const getAll = async () => {
     let result = Object.values(arts);
     return result;
 };
+
+
+export const getMyArts = (ownerId) => {
+    let query = encodeURIComponent(`_ownerId="${ownerId}"`);
+
+    return request.get(`${baseUrl}/gallery?where=${query}`);
+};
+
 
 export const create = async (artData,token) => {
     let response = await fetch(`${baseUrl}/gallery`, {

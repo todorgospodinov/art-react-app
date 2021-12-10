@@ -27,8 +27,8 @@
         text-decoration: none;
     }
     
-    .logo Link {
-        text-decoration: none;
+    .logo span {
+        color: lightskyblue;
     }
     
     nav.mainMenu {
