@@ -1,17 +1,26 @@
-import { useState, useEffect, useContext } from 'react';
+import { useState, useEffect } from 'react';
 import { useParams,useNavigate,Link } from 'react-router-dom';
 import * as artService from '../services/artService';
 import styles from './Details.module.css'
-import { AuthContext } from '../contexts/AuthContext';
+import { useAuthContext } from '../contexts/AuthContext';
 
 
 
     const Details = () => {
         const navigate = useNavigate();
-        const { user } = useContext(AuthContext);
+        const { user } = useAuthContext();
         const [art, setArt] = useState({});
         const { artId } = useParams();
     
+
+  useEffect(async () => {
+        let artResult = await artService.getOne(artId);
+                    setArt(artResult);
+                
+        }, []);
+
+
+
         useEffect(() => {
         artService.getOne(artId)
                 .then(artResult => {
@@ -36,12 +45,12 @@ import { AuthContext } from '../contexts/AuthContext';
 
     const ownerButtons = (
         <>
-            <Link className={styles.button}  >Edit</Link>
-            <Link className={styles.button} onClick={deleteHandler} >Delete</Link>
+            <Link className={styles.button} to={`/edit/${art._id}`} >Edit</Link>
+            <a className={styles.button} onClick={deleteHandler} >Delete</a>
         </>
     );
 
-    const userButtons = <Link className={styles.button} href="#">Like</Link>;
+    const userButtons = <Link className={styles.button} to="#">Like</Link>;
 
 
     return (
@@ -52,14 +61,15 @@ import { AuthContext } from '../contexts/AuthContext';
                 <p className={styles.img}><img src={art.imageUrl} /></p>
                 <div className={styles.actions}>
 
-                    {user._id && (user._id ==art._ownerId)
+                    {user._id && user._id ==art._ownerId
                         ? ownerButtons
                         : userButtons
                     }
 
+
                     <div className={styles.likes}>
                         <img className={styles.hearts} src="/images/heart.png" />
-                        <span id="total-likes">Likes: {art.likes?.length}</span>
+                        <span id="total-likes">Likes: {art.likes?.length||0}</span>
                     </div>
                 </div>
             </div>

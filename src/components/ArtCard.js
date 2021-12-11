@@ -1,12 +1,12 @@
-import { Link } from 'react-router-dom';
+import { useNavigate,Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import styles from './ArtCard.module.css';
-//import { isAuth } from './hoc/isAuth';
+
 
 const ArtCard =({
-art, user
+art
 })=> {
-
+   
     return (<section>
 
         <div className={styles.artCard}>

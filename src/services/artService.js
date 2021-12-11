@@ -31,6 +31,7 @@ export const create = async (artData,token) => {
     return result;
 };
 
+export const update = (artId, artData) => request.put(`${baseUrl}/gallery/${artId}`, artData);
 
 export const getOne = (artId) => {
     return fetch(`${baseUrl}/gallery/${artId}`)
