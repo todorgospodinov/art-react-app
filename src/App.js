@@ -11,6 +11,7 @@ import Login from './components/Login';
 import Logout from './components/Logout';
 import Register from './components/Register'
 import Create from './components/Create';
+import Edit from './components/Edit';
 import Details from './components/Details';
 import CustomErrorBoundary from './components/CustomErrorBoundary';
 import './App.css';
@@ -26,13 +27,13 @@ const initialAuthState = {
 
 function App() {
 
-  //const [user, setUser] = useLocalStorage('user', initialAuthState);
-  const [user, setUser] = useState({
-    _id: '',
-    email: '',
-    accessToken: '',
+  const [user, setUser] = useLocalStorage('user', initialAuthState);
+  // const [user, setUser] = useState({
+  //   _id: '',
+  //   email: '',
+  //   accessToken: '',
   
-  });
+  // });
 
 
   const login = (authData) => {
@@ -57,6 +58,7 @@ function App() {
             <Route path="/logout" element={<Logout />} />
             <Route path="/register" element={<Register />} />
             <Route path="/create" element={<Create />} />
+            <Route path="/edit/:artId" element={<Edit />} />
             <Route path="/details/:artId" element={<Details />} />
           </Routes>
         </main>

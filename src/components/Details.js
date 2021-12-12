@@ -3,30 +3,24 @@ import { useParams,useNavigate,Link } from 'react-router-dom';
 import * as artService from '../services/artService';
 import styles from './Details.module.css'
 import { useAuthContext } from '../contexts/AuthContext';
-
+import * as likeService from '../services/likeService';
+import useArtState from '../hooks/useArtState';
 
 
     const Details = () => {
         const navigate = useNavigate();
         const { user } = useAuthContext();
-        const [art, setArt] = useState({});
         const { artId } = useParams();
+        const [art, setArt] = useArtState(artId);
+        
     
 
-  useEffect(async () => {
-        let artResult = await artService.getOne(artId);
-                    setArt(artResult);
-                
-        }, []);
-
-
-
         useEffect(() => {
-        artService.getOne(artId)
-                .then(artResult => {
-                    setArt(artResult);
+            likeService.getArtLikes(artId)
+                .then(likes => {
+                    setArt(state => ({...state, likes}))
                 })
-        }, [artId]);
+        }, []);
 
 
 
@@ -41,7 +35,29 @@ import { useAuthContext } from '../contexts/AuthContext';
     };
 
 
-   
+
+
+    const likeButtonClick = () => {
+        if (user._id === art._ownerId) {
+            return;
+        }
+
+        // if (art.likes.includes(user._id)) {
+            
+        //     return;
+        // }
+
+        likeService.like(user._id, artId)
+            .then(() => {
+                setArt(state =>
+                     ({...state, likes: [...state.likes, user._id]}));
+
+               // addNotification('', types.success);
+            });
+    };
+
+
+
 
     const ownerButtons = (
         <>
@@ -50,7 +66,7 @@ import { useAuthContext } from '../contexts/AuthContext';
         </>
     );
 
-    const userButtons = <Link className={styles.button} to="#">Like</Link>;
+    const userButtons = <a className={styles.button} onClick={likeButtonClick}>Like</a>;
 
 
     return (
@@ -69,7 +85,7 @@ import { useAuthContext } from '../contexts/AuthContext';
 
                     <div className={styles.likes}>
                         <img className={styles.hearts} src="/images/heart.png" />
-                        <span id="total-likes">Likes: {art.likes?.length||0}</span>
+                        <span id="total-likes">Likes: {art.likes}</span>
                     </div>
                 </div>
             </div>

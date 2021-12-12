@@ -47,3 +47,14 @@ export const remove = (artId,token)=>{
         }
     }).then(res => res.json());
 } 
+
+export const like = (artId, art, token) => {
+    return fetch(`${baseUrl}/gallery/${artId}`, {
+        method: 'PUT',
+        headers: {
+            'content-type': 'application/json',
+            'X-Authorization': token
+        },
+        body: JSON.stringify(art)
+    }).then(res => res.json());
+};
