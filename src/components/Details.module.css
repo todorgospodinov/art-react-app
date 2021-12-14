@@ -41,15 +41,17 @@ textarea#description {
     overflow: auto;
 }
 
-.details .petInformation {
-    height: 10%;
+.details .petInformation img {
+    height: 100%;
 }
 
 .petDescription {
     width: 30rem;
+    height: 21rem;
     padding: 2rem;
     overflow: auto;
     text-align: justify;
+    border: 1px skyblue solid;
 }
 
 .details {
@@ -70,6 +72,7 @@ textarea#description {
 
 .img {
     width: 15rem;
+    height: 21rem;
     position: relative;
     overflow: hidden;
     padding: 0rem;
@@ -82,7 +85,7 @@ img {
     right: 0;
     width: 100%;
     height: auto;
-    object-fit: cover;
+    object-fit: fill;
 }
 
 .img::after {
@@ -97,7 +100,7 @@ img {
     border-radius: 0.4rem;
     text-decoration: none;
     font-weight: bold;
-    background: cadetblue;
+    background: #136af8;
     color: rgb(255, 255, 255);
     border: none;
     font-size: 1rem;
@@ -119,5 +122,13 @@ img {
 .actions {
     display: flex;
     position: absolute;
-    bottom: 150px;
+    bottom: 270px;
+}
+
+.hearts {
+    width: 3rem;
+}
+
+.likes {
+    display: flex;
 }

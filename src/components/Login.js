@@ -1,6 +1,7 @@
 import { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { AuthContext } from '../contexts/AuthContext';
+import { useNotificationContext, types } from '../contexts/NotificationContext';
 import * as authService from '../services/authService';
 import useForm from '../hooks/useForm';
 import { useParams } from 'react-router-dom';
@@ -12,6 +13,7 @@ const Login = () => {
     
     const navigate = useNavigate();
     const { login } = useContext(AuthContext);
+    const {addNotification} = useNotificationContext;
     const { artId } = useParams();
     const [art] = useArtState(artId);
 
@@ -22,8 +24,6 @@ const Login = () => {
       }
       const {handleChange, values,errors} = useForm(formLogin);
       
-
-
 
 
 
@@ -38,6 +38,7 @@ const Login = () => {
         authService.login(email, password)
             .then((authData) => {
                 login(authData);
+              // addNotification('You logged in',types.success);
                 navigate('/');
             })
             .catch(err => {

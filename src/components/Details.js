@@ -42,10 +42,10 @@ import useArtState from '../hooks/useArtState';
             return;
         }
 
-        // if (art.likes.includes(user._id)) {
+        if (art.likes.includes(user._id)) {
             
-        //     return;
-        // }
+            return;
+        }
 
         likeService.like(user._id, artId)
             .then(() => {
@@ -66,32 +66,48 @@ import useArtState from '../hooks/useArtState';
         </>
     );
 
-    const userButtons = <a className={styles.button} onClick={likeButtonClick}>Like</a>;
+    const userButtons = <a className={styles.button} href="" onClick={likeButtonClick}>Like</a>;
 
 
     return (
         <section id="" className={styles.details}>
             <div className={styles.petInformation}>
-                <h3>Name: {art.name}</h3>
-                <p className={styles.type}>Type: {art.type}</p>
+                {/* <h3>{art.name}</h3>
+                <p className={styles.type}>{art.type}</p> */}
                 <p className={styles.img}><img src={art.imageUrl} /></p>
                 <div className={styles.actions}>
 
-                    {user._id && user._id ==art._ownerId
+                    {/* {user._id && user._id ==art._ownerId
                         ? ownerButtons
                         : userButtons
-                    }
+                    } */}
 
 
-                    <div className={styles.likes}>
+                    {/* <div className={styles.likes}>
                         <img className={styles.hearts} src="/images/heart.png" />
-                        <span id="total-likes">Likes: {art.likes}</span>
-                    </div>
+                        <span id="total-likes">Likes: {art.likes?.length||0}</span>
+                    </div> */}
                 </div>
             </div>
             <div className={styles.petDescription}>
-                <h3>Description:</h3>
+                <h3></h3>
+                <h3>{art.name}</h3>
+                <p className={styles.type}>{art.type}</p>
                 <p>{art.description}</p>
+                <div className={styles.actions}>
+
+                                      
+                </div>
+                <div className={styles.likes}>
+                {user._id && user._id ==art._ownerId
+                        ? ownerButtons
+                        : userButtons
+                    }
+                        <img className={styles.hearts} src="/images/heart.png" />
+                        <span id="total-likes">{art.likes?.length||0}</span>
+                        </div>
+                        
+                    
             </div>
         </section>
     );

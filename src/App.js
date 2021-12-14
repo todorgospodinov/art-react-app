@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Routes, Route } from "react-router-dom";
 import { AuthContext } from './contexts/AuthContext';
+import {NotificationProvider} from './contexts/NotificationContext';
 import useLocalStorage from './hooks/useLocalStorage';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -13,6 +14,7 @@ import Register from './components/Register'
 import Create from './components/Create';
 import Edit from './components/Edit';
 import Details from './components/Details';
+import Notification from './components/Common/Notification';
 import CustomErrorBoundary from './components/CustomErrorBoundary';
 import './App.css';
 
@@ -47,8 +49,10 @@ function App() {
   return (
 <CustomErrorBoundary>
     <AuthContext.Provider value={{ user, login, logout }}>
+      <NotificationProvider>
       <div className="App" >
         <Header />
+        <Notification/>
         <main id="site-content">
           <Routes>
             <Route path="/" element={<Slider />} />
@@ -64,6 +68,7 @@ function App() {
         </main>
         <Footer />
       </div>
+      </NotificationProvider>
     </AuthContext.Provider>
     </CustomErrorBoundary>
   );
