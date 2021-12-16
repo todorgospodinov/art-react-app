@@ -60,7 +60,8 @@
     
     .menuAreaMain li:hover a,
     .menuAreaMain li:focus a {
-        color: #081b30;
+        color: #136af8;
+        text-decoration: none;
     }
     
     .menuAreaMain li.active a {

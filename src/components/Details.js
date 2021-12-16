@@ -104,7 +104,7 @@ import useArtState from '../hooks/useArtState';
                         : userButtons
                     }
                         <img className={styles.hearts} src="/images/heart.png" />
-                        <span id="total-likes">{art.likes?.length||0}</span>
+                        <span id="total-likes" data-testid="testlikes">{art.likes?.length||0}</span>
                         </div>
                         
                     

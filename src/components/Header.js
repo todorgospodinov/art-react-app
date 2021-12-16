@@ -32,7 +32,7 @@ const Header = () => {
                   <div className={styles.logoSection}>
                    
                         <div className={styles.centerDesk}>
-                           <div className={styles.logo}> <Link to="/">Art Gallery <span>Tod's Place</span></Link> </div>
+                           <div className={styles.logo} > <Link to="/">Art Gallery <span>Tod's Place</span></Link> </div>
                         
                      </div>
                   </div>

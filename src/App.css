@@ -182,7 +182,6 @@ a {
 
 a:hover {
     color: #0056b3;
-    text-decoration: underline
 }
 
 a:not([href]):not([tabindex]) {
@@ -9502,8 +9501,6 @@ button.btn.btn-primary:focus {
 .product .titlepage h2 {
     color: #136af8;
 }
-
-.black {}
 
 .section_Clients .titlepage h2 {
     padding: 0px 0px 0px 0px;

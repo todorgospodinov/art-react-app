@@ -9,7 +9,7 @@ function Footer() {
              <div className="col-sm-12">
                <div className="titlepage">
                   <div className={styles.main}>
-                     <h1 className={styles.address_text}>Address</h1>
+                     <h1 className={styles.address_text} data-testid="footertest" >Address</h1>
                   </div>
                </div>
              </div>
@@ -38,10 +38,10 @@ function Footer() {
                      <div className={styles.menu_text}>
                         <ul>
                            <li className="active"><a href="#">Home</a></li>                         
-                           <li><a href="about.html">About</a></li>
-                           <li><a href="testmonial.html">Testmonial</a></li>
-                           <li><a href="clients.html">Shop</a></li>
-                           <li><a href="contact.html">Contact Us</a></li>
+                           <li><a className="about.html">About</a></li>
+                           <li><a className="testmonial.html">Testmonial</a></li>
+                           <li><a className="clients.html">Shop</a></li>
+                           <li><a className="contact.html">Contact Us</a></li>
                         </ul>
                      </div>
                   </div>
