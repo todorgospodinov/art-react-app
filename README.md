@@ -1,6 +1,49 @@
-# Getting Started with Create React App
+# art-react-app
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# This project was bootstrapped with Create React App.
+
+The client side is a single page app, dynamically updating with React, using JSX, React JS, HTML and CSS. The server is built on Express JS and it is using Mongo Db for storing the data. The application consists of users and arts. Each user can register, login and logout. Users can also view each products details. Registered users can add, edit and delete  entries and approve orders.
+
+## Functionality
+
+
+User Login:
+ - login in the application via email and password
+
+User Register:
+ - register a new user via email and password
+
+User Logout:
+ - Logouts from the application
+
+## Not Register user can:
+- see the gallery
+- register
+
+## An register user can:
+- see art details
+- like/unlike arts
+- see "my arts"
+- create new art
+- edit art
+- delete art
+
+## Home:
+- See slider review
+
+## Gallery:
+- List of arts
+
+## Details:
+ - Art details. Add review . Each user can like/unlike the product
+
+## My arts:
+ - List users arts
+ - Navigate to art details
+
+## Art Details:
+ - Shows full art details
+ 
 
 ## Available Scripts
 

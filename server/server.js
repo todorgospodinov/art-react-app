@@ -1367,34 +1367,35 @@
         },
         gallery: {
             "7e9e51e0-5e8e-4055-ab51-216ac854da34": {
-            "_ownerId": "76f08dcc-3715-49b4-a599-6412d31e2d15",
-            "name": "Mikelandjelo",
-            "description": "Despite holding a low opinion of painting, he also created two of the most influential frescoes in the history of Western art",
-            "imageUrl": "https://cdn.pixabay.com/photo/2013/10/06/12/57/michelangelos-david-191470__480.jpg",
-            "type": "Sclupture",
-            "likes":0,
-            "_createdOn":1639072059938,
-        },"cce77080-9038-4a8e-a38d-5a417284bce1": {
-            "_ownerId": "76f08dcc-3715-49b4-a599-6412d31e2d15",
-            "name": "DaVinci",
-            "description": "Greatset artist in the Renesanse who was active as a painter, draughtsman, engineer, scientist, theorist, sculptor and architect",
-             "imageUrl": "http://www.shenyunperformingarts.org/data/image/original/2021/05/29/63ea2c642aaee001d818604fe1d9a811.jpg",
-            "type":"Painting",
-            "likes":0,
-             "_createdOn": 1639072567171,
-        },
-        "909ce4b7-abe5-4d75-823c-13961a50f9a2": {
-            "_ownerId": "76f08dcc-3715-49b4-a599-6412d31e2d15",
-            "name": "Blue is the Warmest Color",
-            "description": "Blue is the Warmest Color the best designed movie posters of 2013. Congrats!",
-             "imageUrl": "https://cdn.pastemagazine.com/www/system/images/photo_albums/best-designed-movie-posters-of-2013/large/photo_4475_0.jpg?1384968217",
-             "type":"Poster",
-             "likes":0,
-             "_createdOn":1639073453598,
-        },
+                "_ownerId": "76f08dcc-3715-49b4-a599-6412d31e2d15",
+                "name": "Mikelandjelo",
+                "description": "Despite holding a low opinion of painting, he also created two of the most influential frescoes in the history of Western art",
+                "imageUrl": "https://cdn.pixabay.com/photo/2013/10/06/12/57/michelangelos-david-191470__480.jpg",
+                "type": "Sclupture",
+                "likes": 0,
+                "_createdOn": 1639072059938,
+            }, "cce77080-9038-4a8e-a38d-5a417284bce1": {
+                "_ownerId": "76f08dcc-3715-49b4-a599-6412d31e2d15",
+                "name": "DaVinci",
+                "description": "Greatset artist in the Renesanse who was active as a painter, draughtsman, engineer, scientist, theorist, sculptor and architect",
+                "imageUrl": "http://www.shenyunperformingarts.org/data/image/original/2021/05/29/63ea2c642aaee001d818604fe1d9a811.jpg",
+                "type": "Painting",
+                "likes": 0,
+                "_createdOn": 1639072567171,
+            },
+            "909ce4b7-abe5-4d75-823c-13961a50f9a2": {
+                "_ownerId": "76f08dcc-3715-49b4-a599-6412d31e2d15",
+                "name": "Blue is the Warmest Color",
+                "description": "Blue is the Warmest Color the best designed movie posters of 2013. Congrats!",
+                "imageUrl": "https://cdn.pastemagazine.com/www/system/images/photo_albums/best-designed-movie-posters-of-2013/large/photo_4475_0.jpg?1384968217",
+                "type": "Poster",
+                "likes": 0,
+                "_createdOn": 1639073453598,
+            },
+        }, likes: {
 
         },
-       
+
     };
     var rules$1 = {
         users: {
