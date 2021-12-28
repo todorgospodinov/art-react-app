@@ -1,8 +1,10 @@
 # art-react-app
 
+# deploy on address https://art-create-react-app.herokuapp.com/
+
 # This project was bootstrapped with Create React App.
 
-The client side is a single page app, dynamically updating with React, using JSX, React JS, HTML and CSS. The server is built on Express JS and it is using Mongo Db for storing the data. The application consists of users and arts. Each user can register, login and logout. Users can also view each products details. Registered users can add, edit and delete  entries and approve orders.
+The client side is a single page app, dynamically updating with React, using JSX, React JS, HTML and CSS. The server is built on softuni practice server for storing the data. The application consists of users and arts. Each user can register, login and logout. Users can also view each products details. Registered users can add, edit and delete  entries and approve arts.
 
 ## Functionality
 
