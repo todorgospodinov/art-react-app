@@ -1,6 +1,6 @@
-//const baseUrl = 'http://softuni-server.herokuapp.com/jsonstore';
+const baseUrl = 'http://softuni-server.herokuapp.com/jsonstore';
 
-const baseUrl='http://localhost:3030';
+//const baseUrl='http://localhost:3030';
 
 export const login = async (email, password) => {
     let res = await fetch(`${baseUrl}/users/login`, {
