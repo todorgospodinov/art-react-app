@@ -6,6 +6,7 @@ export const request = async (method, url, data) => {
     } else {
         result = fetch(url, {
             method,
+            
             headers: {
                 'content-type': 'application/json',
                 'X-Authorization': getToken()
