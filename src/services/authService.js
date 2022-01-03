@@ -1,4 +1,4 @@
-const baseUrl = 'http://softuni-server.herokuapp.com/jsonstore';
+const baseUrl = 'http://softuni-server.herokuapp.com/';
 
 //const baseUrl='http://localhost:3030';
 

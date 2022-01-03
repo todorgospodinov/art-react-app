@@ -1,5 +1,5 @@
 import * as request from './requester';
- const baseUrl = 'http://softuni-server.herokuapp.com/jsonstore/data';
+ const baseUrl = 'http://softuni-server.herokuapp.com/';
  //const baseUrl = 'http://localhost:3030/data';
 
 
