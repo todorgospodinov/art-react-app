@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'react';
 import { Routes, Route } from "react-router-dom";
 import { AuthContext } from './contexts/AuthContext';
 import {NotificationProvider} from './contexts/NotificationContext';
