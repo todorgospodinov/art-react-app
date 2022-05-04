@@ -1,11 +1,10 @@
-const baseUrl = 'http://softuni-server.herokuapp.com';
+//const baseUrl = 'http://softuni-server.herokuapp.com';
 
-//const baseUrl='http://localhost:3030';
+const baseUrl='http://localhost:3030';
 
 export const login = async (email, password) => {
     let res = await fetch(`${baseUrl}/users/login`, {
         method: 'POST',
-        mode: "no-cors",
         headers: {
             'content-type': 'application/json'
         }, body: JSON.stringify({ email, password })
@@ -26,7 +25,6 @@ export const login = async (email, password) => {
 export const register = (email, password) => {
     return fetch(`${baseUrl}/users/register`, {
         method: 'POST',
-        mode: "no-cors",
         headers: {
             'content-type': 'application/json'
         },
